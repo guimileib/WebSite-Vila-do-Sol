@@ -41,7 +41,7 @@
             <div class="header-content">
                 <!-- ADICIONE SUA LOGO AQUI SE DESEJAR -->
                 <!--<img src="/images/logo_salao.png" alt="Logo Vila do Sol" style="max-width: 200px; margin-bottom: 20px;"> -->
-                <h1>Há 11 anos transformando festas infantis<br>em <span>MOMENTOS MÁGICOS</span> e inesquecíveis!
+                <h1>Há 9 anos transformando festas infantis<br>em <span>MOMENTOS MÁGICOS</span> e inesquecíveis!
                 </h1>
                 <p>Realize o sonho da festa perfeita para seu filho(a) na Vila do Sol, o melhor espaço de festa
                     infantil em Divinópolis.</p>
@@ -91,16 +91,20 @@
                     <img src="/images/card-imgs/IMG_9182.png" alt="Área de brinquedos da Vila do Sol">
                 </div>
                 <div class="slide">
-                    <img src="/images/card-imgs/IMG_9188.png" alt="Detalhe da decoração na Vila do Sol">
+                    <img src="/images/card-imgs/MCF_6755.jpg" alt="Detalhe da decoração na Vila do Sol">
                 </div>
                 <div class="slide">
-                    <!-- COLOQUE OUTRA IMAGEM AQUI -->
+                    
                     <img src="images/card-imgs/IMG_9183.png" alt="Mesa de doces decorada na Vila do Sol">
                 </div>
                 <div class="slide">
-                    <!-- COLOQUE OUTRA IMAGEM AQUI -->
-                    <img src="images/card-imgs/IMG_9184.png" alt="Crianças se divertindo na Vila do Sol">
+                    
+                    <img src="images/card-imgs/IMG_9185.png" alt="Crianças se divertindo na Vila do Sol">
                 </div>
+                <div class="slide"> 
+                    <img src="images/card-imgs/frente.jpg" alt="Crianças se divertindo na Vila do Sol">
+                </div>
+
                 <div class="nav-arrow nav-prev" onclick="changeSaloesSlide(-1)" aria-label="Slide Anterior">
                     <div class="arrow left"></div>
                 </div>
@@ -120,34 +124,36 @@
                 pode oferecer:</p>
 
             <div class="card-grid">
+            
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/card-imgs/IMG_9188.png" alt="Festa estilo Brunch na Vila do Sol">
+                        <img src="images/card-imgs/IMG_9188.png" alt="Festa estilo Lanche na Vila do Sol">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">FESTA Lanche</h3>
+                        <h3 class="card-title">Festa Lanche</h3>
                         <p class="card-text">Para famílias que querem fugir do óbvio e surpreender com um formato leve,
                             elegante e exclusivo.</p>
                         <a href="#" class="btn btn-primary btn-info" data-festa-id="brunch">MAIS INFORMAÇÕES</a>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/card-imgs/IMG_9186.png" alt="Festa estilo Coquetel na Vila do Sol">
+                        <img src="images/card-imgs/IMG_9186.png" alt="Nossos diferencias no Vila do Sol">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">FESTA Almoço</h3>
-                        <p class="card-text">Ideal para quem quer encantar crianças e adultos com uma festa cheia de
-                            charme, sabor e estrutura.</p>
-                        <a href="#" class="btn btn-info" data-festa-id="coquetel">MAIS INFORMAÇÕES</a>
+                        <h3 class="card-title">Nossos Diferenciais</h3>
+                        <p class="card-text">O que você pode adquirir de diferente para tornar tudo mais mágico</p>
+                        <a href="#" class="btn btn-info" data-festa-id="diferenciais">MAIS INFORMAÇÕES</a>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-image">
                         <img src="images/card-imgs/IMG_9183.png" alt="Festa estilo Lanche na Vila do Sol">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">FESTA Completa</h3>
+                        <h3 class="card-title">Festa Completa</h3>
                         <p class="card-text">A mesma qualidade e estrutura das festas tradicionais, com foco na diversão
                             e delícias que a criançada ama.</p>
                         <a href="#" class="btn btn-primary btn-info" data-festa-id="lanche">MAIS INFORMAÇÕES</a>
@@ -208,7 +214,7 @@
             <div class="tudo-incluso-grid">
                 <div class="incluso-image">
                     <img src="/images/card-imgs/IMG_9188.png"
-                        alt="Detalhes de uma festa infantil completa na Vila do Sol">
+                        alt="Detalhes de uma festa infantil completa na Vila do Sol" height='700px'>
                 </div>
                 <div class="incluso-list-container">
                     <ul class="incluso-list">
@@ -293,8 +299,8 @@
                         <label for="tipo_festa_interesse">Tipo de Festa (interesse):</label>
                         <select id="tipo_festa_interesse" name="tipo_festa_interesse">
                             <option value="">Selecione uma opção</option>
-                            <option value="brunch">Festa Brunch</option>
-                            <option value="coquetel">Festa Coquetel</option>
+                            <option value="brunch">Aluguel</option>
+                            <option value="coquetel">Festa Completa</option>
                             <option value="lanche">Festa Lanche</option>
                             <option value="outro">Outro / Não sei ainda</option>
                         </select>
@@ -389,35 +395,36 @@
             const modalCtaBtn = document.getElementById('modalFestaCta');
 
             const festasData = {
-                brunch: {
-                    title: "FESTA Brunch Detalhada",
+                lanche: {
+                    title: "Festa Lanche Detalhada",
                     description: "Uma experiência matinal ou vespertina, perfeita para celebrações descontraídas e elegantes. Ideal para quem busca um toque de sofisticação com um cardápio leve e delicioso, incluindo pães artesanais, frutas frescas, bolos caseiros, mini sanduíches, sucos naturais e cafés especiais.",
                     itens: [
-                        "Cardápio especial de brunch (salgados e doces)", "Decoração temática leve e charmosa",
+                        "Cardápio infantil completo (lanches clássicos)", "Toalhas de mesa", 
                         "Bebidas: sucos naturais, água aromatizada, café, leite", "Música ambiente selecionada",
-                        "Duração: 3 horas", "Monitores para crianças (opcional)"
+                        "Monitores para crianças (conforme a quantidade de crianças)", "Segurança", "Duração: 3 horas"
                     ],
-                    ctaLink: "https://wa.me/553799995072?text=Olá! Gostaria de mais informações sobre a FESTA Brunch na Vila do Sol."
+                    ctaLink: "https://wa.me/553799995072?text=Olá! Gostaria de mais informações sobre a Festa Lanche na Vila do Sol."
                 },
-                coquetel: {
-                    title: "FESTA Coquetel Detalhada",
-                    description: "Um formato dinâmico e versátil, ótimo para interagir com os convidados. Servimos uma variedade de canapés, salgadinhos finos, mini porções e docinhos, permitindo que todos circulem e aproveitem o espaço e as atrações da festa.",
+                diferenciais: {
+                    title: "Nossos diferenciais",
+                    description: "O que você pode adicionar para tornar tudo impecável, aqui você monta a experiência perfeita para sua família e seus convidados!",
                     itens: [
-                        "Seleção variada de salgados finos (assados e fritos)", "Mini porções volantes (ex: escondidinho, risoto)",
-                        "Mesa de doces artísticos e tradicionais", "Bebidas: refrigerantes, sucos, água",
-                        "Equipe de garçons completa", "Duração: 4 horas"
+                        "Sala de Jogos", "Nosso brinquedão e as casinhas personalizadas",
+                        "Bolo fake", "Comidas: ⁠Prato de boteco, Macarrão",
+                        "Equipe de garçons completa", "Pintura e tatuagem"
                     ],
-                    ctaLink: "https://wa.me/553799995072?text=Olá! Gostaria de mais informações sobre a FESTA Coquetel na Vila do Sol."
+                    ctaLink: "https://wa.me/553799995072?text=Olá! Gostaria de mais informações sobre os diferenciais."
                 },
                 lanche: {
                     title: "FESTA Lanche Detalhada",
                     description: "A diversão e qualidade da Vila do Sol com foco na alegria da criançada. Um cardápio prático e delicioso, incluindo mini pizzas, cachorros-quentes, pipoca, algodão doce, bolo e brigadeiros, além de todos os nossos brinquedos!",
                     itens: [
-                        "Cardápio infantil completo (lanches clássicos)", "Bolo temático e docinhos",
+                        "Cardápio especial (salgados e doces)", "Bolo temático e docinhos",
                         "Refrigerantes, sucos e água", "Acesso a todos os brinquedos do espaço",
-                        "Decoração básica inclusa", "Duração: 3-4 horas"
+                        "Mesa kids","Duração: 4 horas"
+                        
                     ],
-                    ctaLink: "https://wa.me/553799995072?text=Olá! Gostaria de mais informações sobre a FESTA Lanche na Vila do Sol."
+                    ctaLink: "https://wa.me/553799995072?text=Olá! Gostaria de mais informações sobre a Festa Lanche na Vila do Sol."
                 }
             };
 
